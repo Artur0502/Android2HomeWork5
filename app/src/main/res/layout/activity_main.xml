@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity"
+    android:layout_margin="2dp"
+    android:padding="8dp">
+<EditText
+    android:layout_margin="55dp"
+android:hint="Username                 Trivia"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/edt_1"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#B8C6B8"/>
+    <EditText
+        android:paddingStart="12dp"
+        android:hint="Email"
+        app:layout_constraintStart_toStartOf="@id/edt_1"
+        app:layout_constraintEnd_toEndOf="@id/edt_1"
+        android:id="@+id/edt_2"
+        app:layout_constraintTop_toBottomOf="@id/edt_1"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:background="#B8C6B8"/>
+    <EditText
+        android:layout_marginBottom="24sp"
+        android:paddingStart="12dp"
+        android:hint="password"
+        app:layout_constraintStart_toStartOf="@id/edt_1"
+        app:layout_constraintEnd_toEndOf="@id/edt_1"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:background="#B8C6B8"
+        app:layout_constraintTop_toBottomOf="@id/edt_2"/>
+
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:backgroundTint="@color/white"
+        android:textSize="32sp"
+        android:text="NEXT"
+        app:cornerRadius="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/text_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:text="Trivia"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
